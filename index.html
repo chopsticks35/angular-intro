@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="bananaTree">
+<head>
+    <title>Angular</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+</head>
+<body ng-controller="bananaTroller">
+    
+    <h1>{{greeting}}</h1>
+    <h2 ng-bind="greeting"></h2>
+    
+    <input ng-model="greeting" ng-keyup="showGreeting()">
+    <input ng-model="unicorn.name" ng-keyup="showUnicorn()">
+    
+</body>
+</html>
